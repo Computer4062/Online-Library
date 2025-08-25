@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Library</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apply the Inter font for a clean, modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="w-full max-w-3xl bg-gray-800 rounded-2xl shadow-2xl overflow-hidden border border-gray-700">
+        <!-- Header bar with a path-like display -->
+        <div class="flex items-center p-4 bg-gray-700">
+            <!-- Back arrow icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-gray-400 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            <div class="font-medium text-gray-300">ONLINE LIBRARY 📚</div>
+        </div>
+
+        <!-- Main content area for book listings -->
+        <div class="p-6">
+            <!-- Simulated path text -->
+            <div class="text-sm text-gray-400 mb-4">
+                <span class="text-blue-400">root</span> / <span class="text-blue-400">Library</span> / <span class="font-semibold text-gray-200">TEST</span>
+            </div>
+
+            <!-- List of book files -->
+            <div class="grid grid-cols-1 gap-y-3">
+                <!-- Book 1: The Art of War -->
+                <a href="https://drive.google.com/file/d/15D9gbk-QDKIczXP_YBgFd1_5S0Vk4NAd/view?usp=sharing" target="_blank" class="flex items-center gap-4 p-4 rounded-xl transition-colors duration-200 hover:bg-gray-700">
+                    <!-- File icon (PDF) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-red-500 flex-shrink-0">
+                        <path d="M18.75 12.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12.75 18.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12.75 5.25h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM17.25 5.25h-1.5a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5zM17.25 18.75h-1.5a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5zM19.5 1.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0V1.5zM19.5 22.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0V22.5zM1.5 1.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H1.5zM1.5 22.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H1.5zM12 2.25H4.5a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h15a2.25 2.25 0 002.25-2.25V12h-8.25a.75.75 0 01-.75-.75V2.25z" />
+                    </svg>
+                    <div class="flex-grow">
+                        <div class="font-medium text-lg leading-tight">The Art of War</div>
+                        <div class="text-xs text-gray-400">PDF Document - Sun Tzu</div>
+                    </div>
+                </a>
+
+                <!-- Book 2: Think And Grow Rich -->
+                <a href="https://drive.google.com/file/d/1wbJBZyGIf3vX0YSN_bR-9FFPWeqv_5eq/view?usp=sharing" target="_blank" class="flex items-center gap-4 p-4 rounded-xl transition-colors duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-red-500 flex-shrink-0">
+                        <path d="M18.75 12.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12.75 18.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12.75 5.25h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM17.25 5.25h-1.5a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5zM17.25 18.75h-1.5a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5zM19.5 1.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0V1.5zM19.5 22.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0V22.5zM1.5 1.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H1.5zM1.5 22.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H1.5zM12 2.25H4.5a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h15a2.25 2.25 0 002.25-2.25V12h-8.25a.75.75 0 01-.75-.75V2.25z" />
+                    </svg>
+                    <div class="flex-grow">
+                        <div class="font-medium text-lg leading-tight">Think And Grow Rich</div>
+                        <div class="text-xs text-gray-400">PDF Document - Sun Tzu</div>
+                    </div>
+                </a>
+
+                <!-- Book 3: The Universal One -->
+                <a href="https://drive.google.com/file/d/1Bm7UyQZj2wOQPLL1Vqq66EVOmVBCQOuv/view?usp=sharing" target="_blank" class="flex items-center gap-4 p-4 rounded-xl transition-colors duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-red-500 flex-shrink-0">
+                        <path d="M18.75 12.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12.75 18.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12.75 5.25h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM17.25 5.25h-1.5a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5zM17.25 18.75h-1.5a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5zM19.5 1.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0V1.5zM19.5 22.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0V22.5zM1.5 1.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H1.5zM1.5 22.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H1.5zM12 2.25H4.5a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h15a2.25 2.25 0 002.25-2.25V12h-8.25a.75.75 0 01-.75-.75V2.25z" />
+                    </svg>
+                    <div class="flex-grow">
+                        <div class="font-medium text-lg leading-tight">The Universal One</div>
+                        <div class="text-xs text-gray-400">PDF Document - Walter Russell</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
